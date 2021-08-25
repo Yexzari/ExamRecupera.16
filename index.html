@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Examen Recupera</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+                <label for="fechar">Fecha de receta:</label>
+                <input type="text" class="form-control" id="fechar" name="fechar">
+              </div>
+            <div class="form-group">
+              <label for="nombre">Médico:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+              <label for="descripcion">Cédula</label>
+              <textarea class="form-control" name="descripcion" id="descripcion"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="docente">Paciente:</label>
+              <input type="text" class="form-control" id="docente" name="docente">
+            </div>
+            <div class="form-group">
+              <label for="cursos">Fecha de expedición:</label>
+              <input type="text" class="form-control" id="cursos" name="cursos">
+            </div>
+            <div class="form-group">
+                <label for="cursos">Medicamentos:</label>
+                <input type="text" class="form-control" id="medicamento" name="medicamento">
+              </div>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary float-right" onclick="actualizar()">Guardar</button>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" onclick="limpiar()">Limpiar</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-50 offset-7"></div>
+            <table class="table table-dark table-striped" id="table">
+                <thead  >
+                    <TR>
+                            <TH>Recetas</TH>
+                    </TR>
+                    <td>
+                      <h8>Fecha: </h8> <h8 id="fech"></h8>
+                      <h5>Médico: </h5><h5 id="titulo"></h5>
+                      <h6>Cédula: </h6><p><small id="descrip"></small></p>
+                      <h5>Paciente: </h5><h5 id="nombre-docente"></h5>
+                      <h8>Fecha expedición: </h8> <h6 id="total"></h6>
+                      <h5>Medicamentos: </h5><h5 id="medicamentos"></h5>
+                    </td>
+            </table>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+</html>
